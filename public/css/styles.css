@@ -1,0 +1,273 @@
+/*Global style*/
+
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+
+body, html{
+    height: 100%;    
+}
+
+body{
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+h4{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Global style*/
+
+
+/*Header*/
+header{
+    background-color: #EAC926;
+    padding: 15px;
+    text-align: center;
+}
+
+
+header .box-logo .logo{
+    max-width: 160px;
+}
+
+header .box-logo{
+    max-width: 250px;
+    width: 100%;
+}
+
+header .burger-menu{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #1259c3;
+    font-size: 22px;
+    color: #ebebeb;
+    border-radius: 6px;
+}
+
+header .header-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .header-filter .search-input{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+header .header-filter .search-input button{
+    position: absolute;
+}
+
+/*Header*/
+
+
+/*Body*/
+main{
+    width: 90%;
+    margin: auto;
+}
+
+main  h4.title-section{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    animation: titleinfinity 12s linear infinite;
+}
+
+main .section-articulos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .articulo{
+    margin: 10px 2px;
+    background-color: #fff;
+}
+
+main .articulo:hover i{
+    transition: transform 2s;
+    transform: rotate(360deg)
+}
+
+main .articulo ul.articulo-footer{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+
+main .articulo ul.articulo-footer i{
+    color: #39b54a;
+    width: 30px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-color: #39b54a;
+    border-radius: 50%;
+    padding-left: 3px;
+    font-size: ​16​px​; 
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    }
+
+main .title-section{
+    font-size: 24px;
+    color: #666;
+}
+
+main section .articulo img{
+    width: 100%;
+}
+
+main .articulo ul li.prices{
+    font-size: 18px;
+    width: 50%;
+}
+main .articulo ul li.sale{
+    font-size: 16px;
+    color: #39b54a;
+    width: 50%;
+}
+main .articulo ul li.description{
+    display: none;
+    font-size: 16px;
+    color: #666;
+    width: 100%;
+}
+main .articulo​​{
+ position: relative;
+}
+/*Body*/
+
+
+/*Footer*/
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+}
+
+footer .footer-container{
+    display: flex;
+    min-height: 235px;
+    align-items: center;
+}
+
+footer article{
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+footer article p{
+    font-size: 12px;
+    margin: 0;
+}
+
+footer article i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer article h4{
+    font-size: 16px;
+    margin: 0;
+}
+
+/*Footer*/
+
+
+
+/*Register*/
+
+.register-main, .login-main{
+    min-height: 480px;
+    padding: 30px 20px;
+    max-width: 520px;
+    width: 100%;
+    margin: auto;
+}
+.register-main .profile{
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.register-main .profile .profile-set{
+    margin: 0 10px
+}
+.register-main .interests{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.register-main .input-control, .login-main .input-control{
+    width: 100%;
+    border: 0;
+    padding: 6px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.login-main .button-default:hover{
+    background-color: #0022AA;
+}
+
+.button-default{
+    background-color: #1259c3;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border: 0;
+    width: 100%;
+    margin: 10px 0;
+    padding: 6px;
+}
+
+@keyframes titleinfinity {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+  }
