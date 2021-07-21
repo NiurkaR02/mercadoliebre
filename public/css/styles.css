@@ -96,7 +96,8 @@ main  h4.title-section{
     margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 18px;
-    animation: titleinfinity 12s linear infinite;
+    animation: titleinfinity 4s linear infinite;
+    width: auto;
 }
 
 main .section-articulos{
@@ -265,9 +266,12 @@ footer article h4{
 
 @keyframes titleinfinity {
     0% {
-        transform: translate(100%, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
     }
     100% {
-        transform: translate(0, 0);
+        opacity: 1;
     }
   }
